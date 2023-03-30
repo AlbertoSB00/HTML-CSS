@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Kanit;
+    src: url(../fuentes/Kanit/Kanit-Light.ttf);
+}
+@font-face {
+    font-family: Oswald;
+    src: url(../fuentes/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+body{
+    background-image: url(../imagenes/fondo-acuarela-pintada-mano-forma-cielo-nubes_24972-1095.jpg);
+    background-attachment: fixed;
+    font-family: Kanit;
+    color: indigo;
+    text-align: justify;
+}
+
+h1, h2{
+    font-family: Oswald;
+    font-variant: small-caps;
+    font-size: 30pt;
+    font-style: italic;
+    text-align: center;
+}
+
+h3{
+    font-family: Oswald;
+    font-variant: small-caps;
+    font-size: 20pt;
+}
+
+h4{
+    font-family: Oswald;
+    font-variant: small-caps;
+    font-size: 15pt;
+}
+
+hgroup{
+    font-size: 15pt;
+}
+
+figcaption{
+    text-align: center;
+}
+
+a:hover{
+    color: darkred;
+}
