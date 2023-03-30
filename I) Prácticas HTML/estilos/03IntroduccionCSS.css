@@ -1,0 +1,55 @@
+@font-face{
+    font-family: Mondeylla;
+    src:url("../fuentes/mondeylla/Mondeylla.eot") format("eot"),
+        url("../fuentes/mondeylla/Mondeylla.svg#Mondeylla") format("svg"),
+        url("../fuentes/mondeylla/Mondeylla.ttf") format("ttf"),
+        url("../fuentes/mondeylla/Mondeylla.woff") format("woff");
+    font-weight: normal;
+}
+
+body{
+    color: DarkSlateBlue;
+    /*background-color: Thistle;*/
+    /*background-image: url("../imagenes/fondos/ladrillo.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: right bottom;*/
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    background: Thistle url("../imagenes/fondos/silk.png") no-repeat fixed left top;
+    /*background-image: linear-gradient(to right, mediumorchid 10%, mediumpurple 40%, yellow 50%);*/
+}
+
+h1{
+    color: indigo;
+    font-family: Mondeylla;
+    /*font-style: italic;*/
+    /*font-variant: small-caps;*/
+    /*font-weight: 900;*/
+    /*font: italic 100 24pt sans-serif;*/
+    /*font-family: Mondeylla;*/
+    font-size: 60pt;
+    text-transform: capitalize;
+    text-shadow: -5px 5px 2px red;
+}
+
+.material-symbols-outlined{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+p{
+    /*font-family: sans-serif;*/
+    font-size: 14pt;
+    /*font-stretch: ultra-expanded;*/
+    font-family: Minecraft;
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+    text-indent: 1cm;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    
+}

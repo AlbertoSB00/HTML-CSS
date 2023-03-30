@@ -1,0 +1,81 @@
+#encabezado{
+    font-family: Helvetica;
+    color: indigo;
+    text-align: center;
+}
+
+#encabezado1{
+    color: thistle;
+    border: 4px solid transparent;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#encabezado1:hover{
+    color: pink;
+    border: 4px solid darkblue;
+}
+
+#seccion1{
+    font-family: Monospace;
+    color: purple;
+    background-color: lavender;
+
+    /*----Modelo de caja----*/
+    /*Márgenes*/
+    margin-top: 1cm;
+    margin-right: 0.5cm;
+    margin-bottom: 1cm;
+    margin-left: 0.5cm;
+    margin: 1cm 0.5cm 1cm 0.5cm;
+    
+    /*Relleno*/
+    padding-top: 1cm;
+    padding-right: 0.5cm;
+    padding-bottom: 1cm;
+    padding-left: 0.5cm;
+    padding: 1cm 0.5cm 1cm 0.5cm;
+
+    /*Bordes*/
+    /*border-width: 2px;
+    border-style: outset;
+    border-color: darkgray;
+    border: 2px outset darkgray;
+
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: maroon;
+    border-top: 3px solid maroon;*/
+    border: 2px solid darkblue;
+
+    border-radius: 10px 5px 10px 10px;
+
+    /*Contorno*/
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: red;
+    outline: 2px solid red;
+
+    /*Sombras*/
+    box-shadow: 10px 6px 10px #555;
+
+    /*Tamaño o dimensiones de la caja*/
+    width: 400px;
+    height: 500px;
+
+    /*min-width: 300px;
+    min-height: 400px;
+
+    max-width: 500px;
+    max-height: 600px;*/
+
+    padding-right: 1.5cm;
+
+    box-sizing: border-box;
+    padding-right: 1cm;
+
+    /*Desborde del contenido*/
+    overflow: auto;
+}

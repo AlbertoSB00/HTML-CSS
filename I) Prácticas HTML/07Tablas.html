@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <title>Tablas</title>
+            <meta charset="utf-8">
+            <link rel="icon" type="image/lol-icon" href="imagenes/league_of_legends_macos_bigsur_icon_190030.ico">
+            <link rel="stylesheet" type="text/css" href="./estilos/07Tablas.css">
+        </head>
+        <body>
+            <h1>Tablas en HTML</h1>
+            <table>
+                <caption>Horario de 1º DAM B</caption>
+                <colgroup span="1"></colgroup>
+                <colgroup>
+                    <col span="3">
+                    <col span="2">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th style="width: 100px;">Horas/Días</th>
+                        <th style="width: 200px;">Lunes</th>
+                        <th style="width: 100px;">Martes</th>
+                        <th style="width: 300px;">Miércoles</th>
+                        <th style="width: 10px;">Jueves</th>
+                        <th style="width: 225px;">Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15:00 - 16:00</td>
+                        <td colspan="2" rowspan="2">Sistemas Informáticos</td>
+                        <td rowspan="2">Base de Datos</td>
+                        <td rowspan="2">Sistemas Informáticos</td>
+                        <td rowspan="2">Programación</td>
+                    </tr>
+                    <tr>
+                        <td>16:00 - 17:00</td>
+                    </tr>
+                    <tr>
+                        <td>17:00 - 18:00</td>
+                        <td>Programación</td>
+                        <td colspan="2">Formación y Orientación Laboral</td>
+                        <td>Programación</td>
+                        <td>Inglés</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>18:00 - 18:30</td>
+                        <td colspan="5">Recreo</td>
+                    </tr>
+                </tbody>
+                <tbody id="tarde">
+                    <tr>
+                        <td>18:30 - 19:30</td>
+                        <td>Programación</td>
+                        <td>Formación y Orientación Laboral</td>
+                        <td>Entornos de Desarrollo</td>
+                        <td>Programación</td>
+                        <td>Inglés</td>
+                    </tr>
+                    <tr>
+                        <td>19:30 - 20:30</td>
+                        <td rowspan="2">Base de Datos</td>
+                        <td rowspan="2">Lenguaje de Marcas y SGI</td>
+                        <td rowspan="2">Programación</td>
+                        <td rowspan="2">Base de Datos</td>
+                        <td rowspan="2">Entornos de Desarrollo</td>
+                    </tr>
+                    <tr>
+                        <td>20:30 - 21:30</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Horas/Días</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>  
+                    </tr>
+                </tfoot>
+            </table>
+        </body>
+    </html>

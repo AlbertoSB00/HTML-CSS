@@ -1,0 +1,90 @@
+ul{
+    list-style-type: none;
+}
+
+.ingredientes {
+    color: steelblue;
+    padding-left: 20px;
+    background-image: url(../imagenes/check.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    line-height: 2em;
+}
+
+.ingredientes:hover{
+    background-image: url(../imagenes/flecha.png);
+}
+
+/*ol{
+    list-style-type: upper-alpha;
+    list-style-position: inside;
+    list-style: upper-alpha url(../imagenes/flecha.png) inside;
+}*/
+
+dt{
+    font-weight: bold;
+    color: darkblue;
+    font-size: 1.25em;
+}
+
+dd{
+    font-style: italic;
+    color: darkgreen;
+}
+
+ol{
+    list-style-type: none;
+    counter-reset: n1;
+}
+
+ol > li:before{
+    counter-increment: n1;
+    content: counter(n1) ".- ";
+}
+
+ol > ol{
+    list-style-type: none;
+    counter-reset: n2;
+}
+
+ol > ol > li::before{
+    counter-increment: n2;
+    content: counter(n1) "." counter(n2) ".- ";
+}
+
+ol > ol > ol{
+    list-style-type: none;
+    counter-reset: n3;
+}
+
+ol > ol > ol > li::before{
+    counter-increment: n3;
+    content: counter(n1) "." counter(n2) "." counter(n3) ".- ";
+}
+
+body{
+    counter-reset: t1;
+}
+
+h1{
+    counter-reset: t2;
+}
+
+h1::before{
+    counter-increment: t1;
+    content: counter(t1) ".- ";
+}
+
+h2{
+    counter-reset: t3;
+}
+
+h2::before{
+    counter-increment: t2;
+    content: counter(t1) "." counter(t2) ".- ";
+}
+
+h3::before{
+    counter-increment: t3;
+    content: counter(t1) "." counter(t2) "." counter(t3) ".- ";
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+   <html lang="es">
+      <head>
+         <title>Imágenes</title>
+
+         <meta charset="utf-8">
+
+         <style type="text/css">
+            body {
+               background-color: #DDD;
+               color: steelblue;
+               font-family: sans-serif;
+               font-size: 14pt;
+            }
+            
+            p {
+               text-align: justify;
+            }
+            
+            #c1{
+               position: absolute;
+               top: 200px;
+               left: 50px;
+               background-color: thistle;
+               width: 500px;
+               z-index: 2;
+            }
+
+            #c1-1{
+               position: relative;
+               top: 0;
+               left: 0;
+               background-color: navajowhite;
+            }
+
+            #p1{
+               position: sticky;
+               top: 50px;
+               height: 200px;
+               background-color: lime;
+               z-index: 1;
+            }
+         </style>
+      </head>
+      <body>
+
+         <div id="c1">
+            <h1>Maquetación Web</h1>
+            <h2>Clases e Identificadores</h2>
+            <hr>
+            <div id="c1-1">
+               Esto es la c1-1
+            </div>
+         </div>
+
+         <h3>Redes Ethernet</h3>
+
+         <p>
+            Ethernet es la tecnología LAN predominante en el mundo. Ethernet funciona en la capa de enlace de datos y en la capa física del modelo OSI; y en la capa de acceso a la red de Internet. Es una familia de tecnologías de red que se definen en los estándares IEEE 802.2 y 802.3.
+         </p>
+
+         <p>
+         Como se muestra en la figura, los estándares de Ethernet definen tanto los protocolos de capa 2 como las tecnologías de capa 1. Ethernet divide sus funciones en dos capas:
+         </p>
+
+         <p id="p1">
+            - Subcapa LLC.- La subcapa LLC (Logical Link Control) toma los datos del protocolo de la red, que generalmente son un paquete IPv4, y le agrega información de control para ayudar a distribuirlo al nodo de destino. En un ordenador, el LLC se puede considerar el software del controlador de la tarjeta de red (NIC Network Interface Card).
+            <br>
+            - Subcapa MAC.- La subcapa MAC es la subcapa inferior de la capa de enlace de datos y se implementa mediante hardware, generalmente, en la tarjeta de red del ordenador.
+         </p>
+
+         <p>
+         La subcapa MAC de Ethernet tiene dos tareas principales:
+         <br>
+            - Encapsulamiento de datos.- El proceso de encapsulamiento de datos incluye la creación de tramas antes de la transmisión y el desarmado de tramas en el momento de la recepción. Para armar la trama, la capa MAC agrega un encabezado y una cola al paquete de la capa de red, ya con la información de control añadida por la subcapa LLC.
+            <br>
+            - Control de acceso al medio.- La segunda tarea de la subcapa MAC es el control de acceso al medio el cual es responsable de colocar las tramas en el medio de transmisión (en origen) y de extraerlas de ellos (en destino). Esta subcapa se comunica directamente con la capa física. A medida que los paquetes se transfieren del host de origen al host de destino, generalmente deben atravesar diferentes redes físicas. Estas redes físicas pueden constar de diferentes tipos de medios físico de transmisión, como cables de cobre, fibra óptica y tecnología inalámbrica compuesta por señales electromagnéticas, frecuencias de radio y microondas, y enlaces por satélite. El control  de acceso al medio es el conjunto de técnicas que se encargan de colocar y sacar la trama del medio de transmisión físico. 
+         </p>
+
+         <h3>Métodos de control de acceso al medio</h3>
+
+         <p>
+            Algunas topologías de red comparten un medio de transmisión común con varios nodos, denominadas redes de acceso múltiple. Las LAN Ethernet con topología bus o en estrella con concentradores (Hub) y las WLANs son un ejemplo de una red de accesos múltiples. En cualquier momento puede haber una cantidad de dispositivos que intentan enviar y recibir datos utilizando los mismos medios de red.
+         </p>
+
+         <p>
+         En este tipo de topologías la red requiere reglas que rijan la forma de compartir los medios de transmisión físicos entre todos los nodos. Hay dos métodos básicos de control de acceso al medio para medios compartidos:
+         <br>
+            - Acceso por contención.- Todos los nodos en half-duplex compiten por el uso del medio, pero solo un dispositivo puede enviar a la vez. Si dos dispositivos transmiten a la vez se produce una colisión y existe un proceso para tratar esta situación. Las LAN Ethernet que utilizan concentradores (hubs) y las WLAN son un ejemplo de este tipo de control de acceso.
+            <br>
+            - Acceso controlado.- Cada nodo tiene su propio tiempo para utilizar el medio. Estos tipos deterministas de redes no son eficientes porque un dispositivo debe aguardar su turno para acceder al medio. Las LAN de Token Ring antiguo con topología en anillo son un ejemplo de este tipo de control de acceso. .
+         </p>
+
+         <p>
+         De forma predeterminada, los switches Ethernet funcionan en el modo de dúplex completo. Esto permite que el switch y el dispositivo conectado a dúplex completo envíen y reciban simultáneamente. Por tanto, no es necesario implementar ningún método de acceso al medio.
+         </p>
+
+         <h3>La trama Ethernet</h3>
+
+         <p>
+         Una dirección MAC de Ethernet es un valor binario de 48 bits expresado como 12 dígitos hexadecimales (4 bits por dígito hexadecimal). La dirección MAC se divide en dos partes:
+         <br>
+            - 3 primeros bytes son el OUI (Identificador Único de Organización) que definen el fabricante de la tarjeta de red. Cada fabricante tiene un OUI diferente.
+            <br>
+            - 3 últimos bytes asignados por el fabricante. Cada fabricante asigna los tres últimos bytes de la dirección MAC.
+         </p>
+
+         <p>
+         No existen dos direcciones MAC iguales, es única para un dispositivo en particular. Cada fabricante vela para que los tres últimos bytes de la dirección MAC sean diferentes y cada fabricante tiene un OUI diferente.
+         </p>
+
+         <p>
+         Las direcciones MAC se representan por un seis pares de valores hexadecimales donde cada par es un byte. Un ejemplo de dirección MAC es 00-18-DE-DD-A7-B2. Generalmente se emplean el guión o los dos puntos para separar cada byte. Hay tres tipos de direcciones MAC:
+         <br>
+            - Unidifusión.- Una dirección MAC de unidifusión es la dirección única utilizada cuando se envía una trama desde un único dispositivo transmisor hacia un único dispositivo receptor.
+            <br>
+            - Difusión.- Una trama destinada a una dirección de difusión significa que todos los hosts de esa red local (dominio de difusión) recibirán y procesarán la trama. La dirección MAC de difusión FF-FF-FF-FF-FF-FF en hexadecimal (48 números uno en binario).
+            <br>
+            - Multidifusión.- Las direcciones de multidifusión le permiten a un dispositivo de origen enviar una trama a un grupo de dispositivos. La dirección de multidifusión MAC relacionada con una dirección de multidifusión IPv4 es un valor especial que comienza con 01-00-5E en formato hexadecimal. La porción restante de la dirección MAC de multidifusión se crea convirtiendo en seis caracteres hexadecimales los 23 bits inferiores de la dirección IP del grupo de multidifusión. 
+         Las direcciones MAC no se asignan por software. A menudo, la dirección MAC se conoce como dirección física porque, históricamente, esta dirección se graba de manera física en la memoria ROM de la tarjeta de red. Es decir que la dirección está codificada en el chip de la ROM de manera permanente. Cualquier dispositivo que pueda ser el origen o el destino de una trama de Ethernet debe tener asignada una dirección MAC. Esto incluye ordenadores, servidores, impresoras, dispositivos móviles y routers.
+         </p>
+
+         <p>
+         Las direcciones físicas no indican en qué red está ubicado el dispositivo. Si el dispositivo se traslada a otra red o subred, sigue funcionando con la misma dirección física.
+         </p>
+      </body>
+   </html>

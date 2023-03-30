@@ -1,0 +1,302 @@
+/*Formato común.*/
+*{
+    box-sizing: border-box;
+}
+
+html{
+    color: steelblue;
+    background-image: url(../imagenes/fondo-acuarela.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: floralwhite;
+    margin: 0;
+}
+
+#cabecera{
+    background-color: linen;
+}
+
+#menu{
+    background-color: linen;
+}
+
+#servicios{
+    background-color: linen;
+}
+
+#novedades{
+    background-color: linen;
+}
+
+#panel_central{
+    background-color: linen;
+    text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0.25vw;
+}
+
+img{
+    width: 100%;
+}
+
+/*Formato para móviles.*/
+@media only screen and (max-width:480px){
+    body{
+        font-size: 2.7vw;
+    }
+
+    #cabecera{
+        font-size: 5.5vw;
+        width: 100vw;
+        line-height: 12vw;
+        margin: 0;
+        padding: 0.5vw;
+    }
+
+    #logotipo{
+        float: left;
+        width: 13vw;
+    }
+
+    #menu{
+        padding: 1vw 0 1vw 0;
+        margin: 1vw 0 1vw 0;
+    }
+
+    .opcion{
+        width: 19.4vw;
+        display: inline-block;
+        text-align: center;
+    }
+
+    #servicios, #novedades{
+        margin: 0 0 1vw 0;
+        padding: 1vw;
+    }
+
+    .servicio, .novedad{
+        display: inline-block;
+        width: 48vw;
+        padding: 0.5vw;
+    }
+
+    #panel_central{
+        margin: 0;
+        text-align: justify;
+        padding: 0.5vw;
+    }
+
+    #panel_central h3{
+        text-align: center;
+    }
+
+    #panel_central section{
+        border-bottom: 0.1vw solid steelblue;
+    }
+
+    #pie{
+        text-align: center;
+        padding-top: 1vw;
+        margin: 1vw 0 0 0;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:1024px){
+    body{
+        font-size: 3vw;
+    }
+
+    #cabecera{
+        font-size: 5.5vw;
+        line-height: 13vw;
+        padding: 1vw;
+        margin: 0;
+    }
+
+    #logotipo{
+        float: left;
+        width: 13vw;
+    }
+
+    #menu{
+        margin: 1vw 0 0 0;
+        padding: 1vw;
+    }
+
+    .opcion{
+        display: inline-block;
+        width: 18vw;
+        text-align: center;
+    }
+
+    #servicios, #novedades{
+        float: left;
+        width: 50vw;
+        margin: 1vw 0 0 0;
+        padding: 1vw ;
+    }
+
+    .servicio, .novedad{
+        display: block;
+    }
+
+    #panel_central{
+        margin: 1vw 0 0 0;
+        padding: 1vw;
+    }
+
+    #panel_central h3{
+        text-align: center;
+    }
+
+    #panel_central section{
+        border-bottom: 0.1vw solid steelblue;
+    }
+
+    #pie{
+        text-align: center;
+        padding-top: 1vw;
+        margin: 1vw 0 0 0;
+    }
+}
+
+/*@media only screen and (min-width:781px) and (max-width:1024px){
+    
+}*/
+
+@media only screen and (min-width:1025px){
+    body{
+        width: 1025px;
+        margin: 1em auto 1em;
+        border: 1px solid steelblue;
+        border-radius: 0.5em;
+    }
+
+    #cabecera{
+        height: 6em;
+        line-height: 6em;
+        font-size: 1.5em;
+        border: 1px solid steelblue;
+        border-radius: 0.5em;
+        margin: 0.38em;
+    }
+
+    #logotipo{
+        float: left;
+        width: 15%;
+    }
+
+    #menu{
+        margin: 0.5em;
+        border: 1px solid steelblue;
+        border-radius: 0.5em;
+        padding: 1.26em;
+        text-align: center;
+    }
+
+    .opcion{
+        border: 1px solid transparent;
+        border-width: 1.25em;
+    }
+    
+    .opcion:hover{
+        border: 1px solid wheat;
+        border-width: 1.25em;
+        background-color: wheat;
+    }
+    
+    #servicios{
+        width: 20%;
+        float: left;
+        border: 1px solid steelblue;
+        border-radius: 0.5em;
+        margin: 0 0 0.5em 0.5%;
+        padding: 0.5em;
+    }
+    
+    .servicio{
+        display: block;
+    }
+    
+    .servicio::before{
+        content: "- ";
+    }
+
+    #novedades{
+        width: 25%;
+        float: right;
+        border: 1px solid steelblue;
+        border-radius: 0.5em;
+        margin: 0 0.5em 0.5em 0;
+        padding: 0.5em;
+    }
+
+    .novedad{
+        display: block;
+    }
+
+    .novedad::before{
+        content: "- ";
+    }
+
+    #panel_central{
+        float: left;
+        width: 52.55%;
+        border: 1px solid steelblue;
+        border-radius: 0.5em;
+        margin: 0 0 0.5% 0.5%;
+        padding: 0.5em;
+        
+    }
+
+    #pie{
+        clear: both;
+        height: 3em;
+        line-height: 3em;
+        text-align: center;
+    }
+}
+
+@media only print{
+    *{
+        background-color: white;
+        color: grey;
+    }
+
+    #cabecera{
+        font-size: 4vw;
+        line-height: 12vw;
+    }
+
+    #body{
+        width: 211mm;
+        height: 297mm;
+    }
+
+    #logotipo{
+        width: 12vw;
+        float: left;
+    }
+
+    #menu, #novedades, #servicios{
+        display: none;
+    }
+
+    #panel_central{
+        border-top: 0.2vw solid gray;
+        clear: both;
+    }
+
+    #pie{
+        border-top: 0.2vw solid gray;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+    }
+}

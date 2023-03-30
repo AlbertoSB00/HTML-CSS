@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Estructura de una Web con HTML5</title>
+			<style type="text/css">
+				*{
+					box-sizing: border-box;
+				}
+
+				body{
+					width: 1024px;
+					margin: 1em auto;
+					background-color: snow;
+				}
+
+				.conBorde{
+					border: 1px solid darkslategrey;
+					border-radius: 5px;
+				}
+
+				#principal{
+					border-radius: 1em;
+				}
+
+				#logotipo {
+					height: 100%;
+					float: left;
+					margin-right: 0.5em;
+				}
+						
+				p {
+					text-align: justify;
+				}
+
+				.negrita {
+					font-weight: bold;
+				}
+
+				#cabecera{
+					height: 70px;
+					font-size: 18pt;
+					font-weight: bold;
+					line-height: 70px;
+					margin: 0 0 0.5em 0;
+				}
+
+				#menu{
+					float: left;
+					width: 20%;
+					height: 400px;
+					padding: 0.5em;
+				}
+
+				#panel_central{
+					float: left;
+					width: 58.438718795776363%;
+					padding: 0.5em;
+					margin: 0 0.5em 0.5em 0.5em;
+				}
+
+				#lateral{
+					float: right;
+					width: 20%;
+					padding: 0.5em;
+				}
+
+				#pie{
+					clear: both;
+					height: 50px;
+					line-height: 50px;
+					text-align: center;
+					font-size: 0.9em;
+				}
+				
+			</style>
+    </head>
+    <body>
+    	<header id="cabecera" class="conBorde">
+			<img src="imagenes/logotipo.png" id="logotipo">
+			Nombre empresa u organización
+		</header>
+
+		<nav id="menu" class="conBorde">
+			<h4>Menú</h4>
+			<p>
+			<a href="">¿Quiénes somos?</a><br><a href="">Nuestros productos</a> ...
+			</p>				
+		</nav>
+			
+		<aside id="lateral" class="conBorde">
+			<h3>Novedades</h3>
+			<p class="negrita">2-feb - <a href="">Nueva gama de productos INLINE</a></p>
+			<p class="negrita">28-ene - <a href="">Actualización controladores UPS</a></p>
+			<p class="negrita">14-ene - <a href="">Nuevos modelos UPS</a></p>
+		</aside>
+			
+		<main id="panel_central" class="conBorde">
+		<section>
+			<header>
+				<h3>Nuestros productos</h3>
+			</header>
+			<article>
+				<h4>UPS</h4>
+				<p><q>Unit Power Supply</q> (Sistema de Alimentación Ininterrumpida) es un dispositivo que gracias a sus baterías y otros elementos almacenadores de energía, durante un apagón eléctrico puede proporcionar energía eléctrica por un tiempo limitado a todos los dispositivos que tenga conectados. Otra función que se puede añadir a estos equipos es mejorar la calidad de la energía eléctrica que llega a las cargas, filtrando subidas y bajadas de tensión y eliminando armónicos de la red en caso de usar corriente alterna.
+				</p>
+			</article>
+			<article>
+				<h4>WAP</h4>
+				<p><q>Wireless Access Point</q> (Punto de acceso inalámbrico) es un dispositivo de red que interconecta equipos de comunicación inalámbricos, para formar una red inalámbrica que interconecta dispositivos móviles o tarjetas de red inalámbricas.
+				</p>
+				<p>Son dispositivos que son configurados en redes de tipo inalámbricas que son intermediarios entre una computadora y una red (Internet o local). Facilitan conectar varias máquinas cliente sin la necesidad de un cable (mayor portabilidad del equipo) y que estas posean una conexión sin limitarle tanto su ancho de banda.
+				</p>
+			</article>
+			<article>
+				<h4>NRZ</h4>
+				<p>La forma más frecuente y fácil de transmitir señales digitales es mediante la utilización de un nivel diferente de tensión para cada uno de los bits. Los códigos que siguen esta estrategia comparten la propiedad de que el nivel de tensión se mantiene constante durante la duración del bit, es decir, no hay transiciones (no hay retorno al nivel cero de tensión). Por ejemplo la ausencia de tensión se puede utilizar para representar un 0 binario, mientras que un nivel constante y positivo de tensión puede representar el 1.
+				</p>
+			</article>
+		</section>
+		<section>
+			<header><h3>En desarrollo</h3></header>
+			<article>
+				<h4>Auricular BlueTooth con 10 horas de autonomía</h4>
+				<p>Nuestros auriculares BP3H están a punto de salir a la fase producción y estarán en el mercado en 2 meses.</p>
+			</article>
+		</section>
+		</main>	
+			
+		<footer id="pie">
+			<hr>
+			&copy;Nombre de la empresa - Contacto: webmaster@empresa.com
+		</footer>
+    </body>
+  </html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="./estilos/17Formularios.css" type="text/css">
+            <title>Formularios Galindo</title>
+        </head>
+        <body>
+            <h1>Formularios Galindo</h1>
+            <h2>Búsqueda de zapatos</h2>
+            <form action="https://iesgc.000webhostapp.com/busqueda_zapatos.php" method="POST">
+                <fieldset>
+                    <legend>Datos de registro del usuario</legend>
+                    <div class="campoFormulario">
+                        <label for="login">Login</label>
+                        <input 
+                            type="text" 
+                            name="login" 
+                            id="login" 
+                            size="15" 
+                            maxlength="10" 
+                            autofocus 
+                            placeholder="usuario" 
+                            title="Introduzca su nombre de usuario" 
+                            tabindex="1"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="campoFormulario">
+                        <label for="clave">Contraseña</label>
+                        <input 
+                            type="password"
+                            name="clave"
+                            id="clave"
+                            size="15"
+                            maxlength="10"
+                            placeholder="contraseña" 
+                            title="Introduzca su contraseña"
+                            tabindex="2"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="campoFormulario">
+                        <label for="nombre">Nombre</label>
+                        <input 
+                            type="text"
+                            name="nombre"
+                            id="nombre"
+                            size="20"
+                            maxlength="30"
+                            placeholder="nombre"
+                            title="Introduzca su nombre"
+                            tabindex="3"
+                        >
+                    </div>
+
+                    <div class="campoFormulario">
+                        <label for="apellidos">Apellidos</label>
+                        <input 
+                            type="text"
+                            name="apellidos"
+                            id="apellidos"
+                            size="40"
+                            maxlength="60"
+                            placeholder="apellidos"
+                            title="Introduzca sus apellidos"
+                            tabindex="4"
+                        >
+                    </div>
+
+                    <div class="campoFormulario">
+                        <label for="email">Email</label>
+                        <input 
+                            type="email"
+                            name="email"
+                            id="email"
+                            size="40"
+                            maxlength="60"
+                            placeholder="email"
+                            title="Introduzca su email"
+                            tabindex="5"
+                            required
+                        >
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos de la búsqueda</legend>
+
+                    <div class="campoFormulario">
+                        <label for="fecha_entrega">Fecha de entrega</label>
+                        <input
+                            type="date"
+                            name="fecha_entrega"
+                            id="fecha_entrega"
+                            tabindex="6"
+                            value="2023-03-21"
+                        >
+                    </div>
+
+                    <div class="campoFormulario">
+                        <label for="hora_entrega">Hora de entrega</label>
+                        <input
+                            type="time"
+                            name="hora_entrega"
+                            id="hora_entrega"
+                            tabindex="7"
+                            value="15:00"
+                        >
+                    </div>
+
+                    <div class="campoFormulario">
+                        <label for="medida">Medida del pie</label>
+                        <input
+                            type="number"
+                            name="medida"
+                            id="medida"
+                            tabindex="8"
+                            min="15"
+                            max="60"
+                            value="38"
+                        >
+                    </div>
+
+                    <div class="campoFormulario">
+                        <label for="descuento">Descuento</label>
+                        <input
+                            type="range"
+                            name="descuento"
+                            id="descuento"
+                            tabindex="9"
+                            min="10"
+                            max="50"
+                            step="10"
+                            value="20"
+                        >
+                    </div>
+
+                    <div class="campoFormulario">
+                        <label for="color">Color</label>
+                        <input
+                            type="color"
+                            name="color"
+                            id="color"
+                            tabindex="10"
+                            value="#FF38BB"
+                        >
+                    </div>
+
+                    <div class="campoFormulario">
+                        <label for="regalo">Envuelto para regalo</label>
+                        <input
+                            type="checkbox"
+                            name="regalo"
+                            id="regalo"
+                            tabindex="11"
+                            value="Si"
+                            checked
+                        >
+                    </div>
+
+                    <div class="campoFormulario">
+                        <fieldset>
+                            <legend>Forma de pago</legend>
+                            <input
+                                type="radio"
+                                name="forma_pago"
+                                id="forma_pago"
+                                tabindex="12"
+                                value="VI"
+                            >Visa
+                            <input
+                                type="radio"
+                                name="forma_pago"
+                                id="forma_pago"
+                                tabindex="13"
+                                value="AE"
+                                checked
+                            >American Express
+                            <input
+                                type="radio"
+                                name="forma_pago"
+                                id="forma_pago"
+                                tabindex="14"
+                                value="MC"
+                            >Mastercard
+                            <input
+                                type="radio"
+                                name="forma_pago"
+                                id="forma_pago"
+                                tabindex="15"
+                                value="PP"
+                            >PayPal
+                        </fieldset>
+                    </div>
+
+                    <div class="campoFormulario">
+                        <label for="observaciones">Obervaciones</label>
+                        <textarea
+                            name="observaciones"
+                            id="observaciones"
+                            rows="5"
+                            cols="50"
+                            tabindex="16"
+                        >Introduzca las aclaraciones que consideres</textarea>
+                    </div>
+
+                    <div class="campoFormulario">
+                        <label for="material">Material</label>
+                        <select
+                            name="material[]"
+                            id="material"
+                            tabindex="17"
+                            size="4"
+                            multiple
+                        >
+                            <option value="an">Ante</option>
+                            <option value="cu">Cuero</option>
+                            <option value="pi">Piel</option>
+                            <option value="pl">Plástico</option>
+                            <option value="si">Sintético</option>
+                            <option value="go">Goma</option>
+                        </select>
+                    </div>
+
+                    <div class="campoFormulario">
+                        <label for="estilo">Estilo</label>
+                        <select
+                            name="estilo"
+                            id="estilo"
+                            tabindex="18"
+                            size="1"
+                        >
+                            <optgroup label="Hombre">
+                                <option value="zbh">Zapato bajo</option>
+                                <option value="sh">Sandalia</option>
+                                <option value="bbh">Bota baja</option>
+                                <option value="bah">Bota alta</option>
+                                <option value="dh">Deportiva</option>
+                            </optgroup>
+
+                            <optgroup label="Mujer">
+                                <option value="zbm">Zapato bajo</option>
+                                <option value="sm">Sandalia</option>
+                                <option value="bm">Botín</option>
+                                <option value="bcam">Bota caña alta</option>
+                                <option value="dm">Deportiva</option>
+                                <option value="tam">Tacón alto</option>
+                            </optgroup>
+
+                            <optgroup label="Niño">
+                                <option value="zbn">Zapato bajo</option>
+                                <option value="sn">Sandalia</option>
+                                <option value="bbn">Bota baja</option>
+                                <option value="dn">Deportiva</option>
+                                <option value="ban">Bota agua</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="campoFormulario">
+                        <label for="marca">Marca</label>
+                        <datalist name="marcas" id="marcas">
+                            <option value="Panama Jack"></option>
+                            <option value="Pikolinos"></option>
+                            <option value="Camper"></option>
+                            <option value="TimberLand"></option>
+                            <option value="Calamand"></option>
+                            <option value="Mustang & Sally"></option>
+                            <option value="Woffman"></option>
+                        </datalist>
+                        <input
+                            type="text"
+                            name="marca"
+                            id="marca"
+                            tabindex="19"
+                            size="20"
+                            maxlength="50"
+                            list="marcas"
+                        >
+                    </div>
+
+                    <input
+                        type="hidden"
+                        name="operacion"
+                        id="operacion"
+                        value="Buscar y registrar"
+                    >
+                </fieldset>
+
+                <input
+                    type="submit"
+                    name="accion1"
+                    id="accion1"
+                    tabindex="20"
+                    value="Buscar zapatos"
+                >
+
+                <input
+                    type="reset"
+                    name="reset"
+                    id="reset"
+                    value="Comenzar de nuevo"
+                >
+
+                <button type="submit" name="accion2" id="accion2">Enviar formulario</button>
+                <button type="submit" name="accion2" id="accion3"><img src="./imagenes/flecha.png"></button>
+            </form>
+        </body>
+    </html>

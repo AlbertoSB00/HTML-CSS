@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="utf-8">
+            <title>Elementos textuales en HTML</title>
+            <link rel="stylesheet" href="estilos/03IntroduccionCSS.css">
+            <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/bahiana" type="text/css"/>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        </head>
+        <body>
+            <h1>Elementos textuales HTML</h1>
+                        
+        
+            <h3>Párrafos</h3>
+            <p>
+                <span class="material-symbols-outlined">settings</span>
+                Tras haber visto la estructura básica de un documento HTML, pasamos ahora a ver la
+                parte que hace referencia a lo que es el cuerpo del documento, donde irá incluido todo el
+                contenido a visualizar en la pantalla del navegador. Todos los elementos que vamos a ver a
+                continuación deben introducirse dentro del elemento body o de lo contrario no se verán.
+                En los documentos HTML, hay una peculiaridad con respecto a los editores de texto,
+                Debemos de indicar con elementos cualquier componente de la página: párrafos, saltos de
+                línea, títulos, etc. Podemos escribir texto dentro del cuerpo del documento, sin elementos,
+                pero el texto rellenaría la ventana del navegador y al no estar en ningún elemento, resultaría
+                muy difícil darle formato. Así que se recomienda que todo el texto del documento esté
+                dentro de un elemento.
+            </p>
+            <p>
+                Como podemos ver, los nuevos elementos de diseño HTML5 no tienen un formato
+                predefinido. El resultado anterior no se parece a la distribución de las diferentes partes.
+                Vemos que la barra lateral está debajo de la información principal. En realidad los elementos
+                han seguido el flujo normal HTML, donde ya sabemos que tienen un posicionamiento por
+                defecto estático y, por tanto, aparecen en la pantalla del navegador uno detrás de otro en el
+                mismo orden en que aparecen en el código HTML.
+                Nos corresponde entonces a nosotros dar formato a nuestro diseño para colocar cada
+                elemento de la estructura en su lugar.
+            </p>
+            
+            
+            <h3>Saltos de línea</h3>
+            <p>
+                En el típico diseño de una página web la sección llamada Institucional será definida por
+                etiquetas footer. Esto es debido a que la barra representa el pie del documento y esta
+                parte de la página web es normalmente usada para compartir información general sobre el
+                autor o la organización detrás del proyecto.<br>
+                Generalmente, el elemento footer representará el final del cuerpo de nuestro
+                documento y tendrá el propósito descripto anteriormente. Sin embargo, footer puede ser
+                usado múltiples veces dentro del cuerpo para representar también el final de diferentes
+                secciones.
+            </p>
+            
+            
+            <h3>Textos sin formato</h3>
+            <pre>
+                Esto es un texto
+                preformateado y aparece
+                tal cual los escribo
+                en el documento HTML
+            </pre>
+            
+            
+            <h3>Encabezados</h3>
+            <h1>Encabezado nivel 1</h1>
+            <h2>Encabezado nivel 2</h2>
+            <h3>Encabezado nivel 3</h3>
+            <h4>Encabezado nivel 4</h4>
+            <h5>Encabezado nivel 5</h5>
+            <h6>Encabezado nivel 6</h6>
+            <hgroup>
+                <h1>Introducción a la programación</h1>
+                <h3>Concepto de Algoritmo</h3>
+            </hgroup>
+            
+            
+            <h3>Separadores</h3>
+            <hr size="5" width="75%" align="left" noshade color="blue">
+            <hr>
+            
+            
+            <h1>Elementos textuales en línea</h1>
+            <h3>Cita</h3>
+            <p>El físico y matemático griego Pitágoras dijo: <cite>Dadme un punto de apoyo y moveré el mundo.</cite> tratando de demonstar que con una palanca y un punto de apoyo se puede mover cualquier objeto por pesado que sea.</p>
+            
+            
+            <h3>Texto entre comillado</h3>
+            <p>Alguién dijo una vez: <q>Las cosas imposibles simplemente necesitan más tiempo para hacerse.</q> Depende de lo que consideremos imposible.</p>
+            
+            
+            <h3>Acrónimos</h3>
+            <p>La exposición de Internet vino con el servicio <abbr title="World Wide Web">WWW</abbr> y el desarrollo de <abbr title="Hyper Text Markup Language">HTML</abbr> por parte del <abbr title="Centro Europeo de Investigación">CERN</abbr></p>
+            
+            
+            <h3>Subíndices y superíndices</h3>
+            <p>La molécula del agua es H<sub>2</sub>O y la del dióxido de carbono es CO<sub>2</sub>. Según Albert Einstein la relación entre masa y energía es E=mc<sup>2</sup></p>
+            
+            
+            <h3>Texto remarcado</h3>
+            <p>La parte física de un sistema informático es el <mark>hardware</mark> y la parte lógica se denomina <mark>software</mark>. El firmaware es: <mark>la capa intermedia entre el hardware y el software</mark>. Es software, pero integrado dentro del hardware para funciones de control.</p>
+            
+            
+            <h3>Elemento span para delimitar texto</h3>
+            <p>El <span>sistema operativo</span> es un conjunto de programas que coordinan, dirigen y controlan el uso del hardware de un sistema informático.</p>
+            <hr>
+            
+            
+            <h1>Elementos HTML de formato que están obsoletos y desaconsejados</h1>
+            <p>Hay elementos en HTML que se aplican únicamente para dar formato. Por ejemplo <b>texto en negrita</b>, <u>texto subrayado</u> y <i>texto en cursiva</i>.</p>
+            <p>Ahora puedo combiar los estilos básicos, por ejemplo <b><i>texto en negrita y cursiva</i></b>, <b><u>texto en negrita y subrayado</u></b> y finalmente <u><i>texto subrayado y cursiva</i></u>. También puedo poner los tres estilos juntos, por ejemplo <b><u><i>texto en negrita, subrayado y cursiva</i></u></b>.</p>
+            <p><s>Este texto tiene que aparecer tachado</s></p>
+            <hr>
+            
+            
+            <h1>Carácteres referenciados por nombre</h1>
+            <p>La fórmula de la longitud y el área de la circunferencia es L=2&pi;r y A=&pi;r<sup>2</sup></p>
+            <p>La cotización del euro respecto de la libra y el yen. Un € vale 0,95 &pound; y 215 &yen;</p>
+            
+            
+            <p>&copy; Alberto Sánchez</p>
+        </body>
+    </html>
