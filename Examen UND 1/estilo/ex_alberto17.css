@@ -1,0 +1,69 @@
+/* Alberto Sánchez Barona */
+@font-face{
+    font-family: itim;
+    src: url(../fuentes/Itim/Itim-Regular.ttf);
+}
+
+@font-face{
+    font-family: syne-mono;
+    src: url(../fuentes/Syne_Mono/SyneMono-Regular.ttf);
+}
+
+body{
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: darkslateblue;
+}
+
+hgroup{
+    font-family: itim;
+}
+
+h3{
+    font-family: sans-serif;
+    font-size: 18pt;
+}
+
+p{
+    text-align: justify;
+    font-family: syne-mono;
+    color: darkblue;
+    text-indent: 1cm;
+    font-size: 1.2em;
+}
+
+img{
+    margin: 0.2cm;
+}
+
+figcaption{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    color: maroon;
+    text-align: center;
+}
+
+mark{
+    color: lightgray;
+    background-color: darkslateblue;
+}
+
+abbr{
+    color: darkslateblue;
+    font-size: 1.2em;
+}
+
+a{
+    color: purple;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+a:visited{
+    color: purple;
+}
+
+a:hover{
+    font-weight: bold;
+}

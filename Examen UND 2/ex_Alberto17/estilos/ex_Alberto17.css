@@ -1,0 +1,170 @@
+/*Formato común*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    text-align: justify;
+    color: steelblue;
+    background-color: mistyrose;
+}
+
+#cabecera{
+    text-align: center;
+}
+
+#menu, #panel_lateral{
+    background-color: thistle;
+}
+
+#seccion{
+    background-color: burlywood;
+}
+
+#pie{
+    text-align: center;
+}
+
+caption{
+    font-size: 1.2em;
+}
+
+#tabla{
+    margin: auto;
+}
+
+th{
+    background-color: thistle;
+    border: 0.1em solid indigo;
+    width: 6em;
+}
+
+td{
+    background-color: lightyellow;
+    border: 0.1vw solid indigo;
+    height: 0.3em;
+    text-align: center;
+}
+
+/*Formato ancho máximo 900px*/
+@media only screen and (max-width: 900px){
+    body{
+        font-size: 15pt;
+    }
+
+    h2, h3, h4, p{
+        margin: 0.5em;
+    }
+
+    #cabecera{
+        padding: 0.5em;
+        border-bottom: 0.1em solid slateblue;
+    }
+
+    #menu, #panel_lateral{
+        border-radius: 0.5em;
+        margin: 0.5em;
+        padding: 0.5em;
+    }
+
+    a{
+        margin-right: 0.5em;
+        display: inline-block;
+    }
+
+    #seccion{
+        padding: 0.5em;
+        margin-bottom: 0.5em;
+    }
+}
+
+/*Formato ancho mínimo 901px*/
+@media only screen and (min-width: 901px){
+    html{
+        background-image: url("../imagenes/fondo.png");
+    }
+
+    body{
+        width: 900px;
+        border-radius: 0.5em;
+        margin: auto;
+        font-size: 15pt;
+    }
+
+    h2, h3, h4, p{
+        margin: 0.5em;
+        font-size: 12pt;
+    }
+
+    #cabecera{
+        padding: 0.5em;
+        margin-bottom: 0.5em;
+        border-bottom: 0.1em solid slateblue;
+    }
+
+    #menu{
+        border-radius: 0.5em;
+        width: 20%;
+        height: 30vw;
+        margin: 0.5em;
+        padding: 0.5em;
+        float: left;
+    }
+
+    #panel_lateral{
+        border-radius: 0.5em;
+        width: 20%;
+        height: 30vw;
+        margin: 0.5em;
+        padding: 0.5em;
+        float: right;
+    }
+
+    a{
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+        display: inline-block;
+        font-size: 11pt;
+    }
+
+    #panel_principal{
+        float: left;
+        width: 53%;
+        height: 42vw;
+        margin: 0.5em;
+        padding: 0.5em;
+        border: 0.1em solid steelblue;
+        border-radius: 0.5em;
+    }
+
+    #seccion{
+        padding: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    #pie{
+        clear: both;
+        padding: 0.5em;
+    }
+}
+
+/*Formato para impresoraas*/
+@media only print{
+    *{
+        background-color: white;
+    }
+
+    body{
+        width: 211mm;
+        height: 297mm;
+    }
+
+    #menu, #panel_lateral{
+        visibility: hidden;
+    }
+
+    #pie{
+        width: auto;
+    }
+}

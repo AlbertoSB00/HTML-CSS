@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./estilo/ex_alberto17.css">
+        <title>Examen HTML - CSS 1</title>
+    </head>
+    <body>
+        <a id="inicio"></a>
+        <hgroup style="font-size: 25pt; font-weight: bold;">
+            Examen HTML - CSS 1<br>
+            Alberto Sánchez Barona
+        </hgroup>
+        <hr>
+        <h3>
+            Redes inalámbricas
+        </h3>
+        
+        <a href="#wlan802">- WLAN 802.11 (WiFi)</a><br>
+        <a href="#configuracion">- Configuración Router WRT300N</a><br>
+        <a href="https://es.wikipedia.org/wiki/Red_de_%C3%A1rea_local_inal%C3%A1mbrica" target="_blank">- WLAN en Wikipedia</a>
+        <hr>
+        <h3>
+            <a id="wlan802"></a>WLAN 802.11 (WiFi)
+        </h3>
+        <p>
+            <abbr title="Wireless Local Area Network">WLAN</abbr> es un sistema de comunicación de datos inalámbrico flexible, muy utilizado como alternativa a las redes <mark>LAN cableadas</mark> o como extensión de éstas. Utiliza tecnología de radiofrecuencia que permite mayor movilidad a los usuarios al minimizar las conexiones cableadas. Su empleo más frecuente es en pequeñas y mediana empresas para permitir a usuarios móviles conectarse a la red local cableada de la empresa u organización. También son muy populares en los hogares para compartir el acceso a Internet entre varios ordenadores.
+        </p>
+        <p>
+            El <span style="font-style: italic;">&#171;protocolo IEEE 802.11&#187;</span> o Wi-Fi es un estándar de protocolo de comunicaciones del IEEE que define el uso de los dos niveles inferiores de la arquitectura OSI (capas física y de enlace de datos), especificando sus normas de funcionamiento en una WLAN. Su tecnología se basa en el envío y recepción de ondas de radio a través del espacio libre. Estas se transmiten a distinta frecuencia, pudiendo simultanearse en el tiempo y en el espacio sin interferir entre ellas para permitir el envío de varias comunicaciones a la vez.
+        </p>
+        <p>
+            En una configuración típica, existe una red cableada a la que se conecta en un lugar fijo mediante cableado normalizado un punto de acceso inalámbrico, que es un dispositivo que da acceso a nodos inalámbricos a la red Ethernet cableada. Los nodos inalámbricos que se encuentran dentro del alcance del punto de acceso pueden conectarse a la red a través de éste. El punto de acceso recibe la información, la almacena y la transmite entre la WLAN y la LAN cableada.
+        </p>
+            <figure style="text-align: center;">
+                <img src="./imagenes/wifi.png">
+                <figcaption>Configuración típica de WLAN</figcaption>
+            </figure> 
+        <h3>
+            <a id="configuracion"></a>Configuración Router WRT300N
+        </h3>
+        <figure style="float: left;">
+            <img src="./imagenes/radius.png" width="500px">
+            <figcaption>Autenticación Radius</figcaption>
+        </figure>
+        <p>
+            El router inalámbrico WRT300N dispone de una interfaz web para realizar su configuración. Como tiene habilitado por defecto un servidor DHCP podemos conectar un PC a cualquier interfaz Ethernet del router para que este obtenga unos parámetros IP que permitirán conectar al PC con el router. Cuando nuestro PC haya obtenido una dirección IP desde el router, abrimos un navegador y en la barra de dirección escribimos http://192.168.0.1.
+        </p>
+        <p>
+            Antes de conectar el router nos exige autenticarnos. Aparecerá un cuadro de autenticación en el que deberemos introducir el nombre del usuario administrador y la contrasña. Si el router es nuevo o está reseteado, el usuario administrador por defecto es admin y la clave admin.
+        </p>
+        <p>
+            Una alternativa más segura que emplear autenticación y cifrado a través del router WiFi y con los modos de seguridad tradicionales WPA o WPA2 es utilizar un servicio RADIUS: &#171;Remote Autentication Dial-In User Server&#187;. Este servicio que se ejecuta en un servidor conectado a la misma red cableada que el router WiFi permite autenticar clientes inalámbricos cada uno de los cuales dispone para la conexión a la red inalámbrica unas credenciales propias formadas por un par usuario/contraseña.<br>
+        </p>
+        <figure style="float: right; margin: auto;">
+            <a href="#inicio"><img src="./imagenes/atras.png" width="50"></a>
+        </figure>
+        <p style="text-align: right; float: right;">
+            Volver al principio
+        </p> 
+    </body>
+</html>
