@@ -1,0 +1,48 @@
+body{
+    background-image: url(../imagenes/textura-madera-color-claro_1083-21.jpg);
+    font-family: "Architects Daughter";
+    font-size: 14pt;
+}
+
+hgroup{
+    background-image: url(../imagenes/fondo-madera-tablero-madera-fondo-claro_326533-759.jpg);
+    font-family: "Dosis";
+    text-align: center;
+    letter-spacing: 5pt;
+    font-variant: small-caps;
+    text-shadow: 2pt 2pt 2pt;
+    color: steelblue;
+}
+
+h3{
+    font-family: "Balsamiq Sans";
+    font-size: 20pt;
+    color: indigo;
+    text-align: right;
+}
+
+p{
+    text-align: justify;
+    color: slateblue;
+    text-indent: 40px;
+}
+
+pre{
+    font-family: monospace;
+    color:brown;
+    background: linear-gradient(to bottom, indianred, lightcoral);
+}
+
+mark{
+    background-color: mediumslateblue;
+}
+
+cite{
+    color: olive;
+    font-weight: bold;
+}
+
+abbr{
+    color: sienna;
+    font-weight: 16pt;
+}

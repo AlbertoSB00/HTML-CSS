@@ -1,0 +1,328 @@
+/*Formato común*/
+*{
+    box-sizing: border-box;
+}
+
+html{
+    color: steelblue;
+    font-family: arial;
+}
+
+#cabecera{
+    background-color: lightcyan;
+}
+
+#menu{
+    background-color: rgb(224, 197, 197);
+}
+
+#sobre_mi, #a_que_me_dedico{
+    background-color: rgb(233, 198, 185);
+    text-align: justify;
+}
+
+#panel_central{
+    background-color: lightblue;
+    text-align: justify;
+}
+
+#pie{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+/*Formato para <= 480px*/
+@media only screen and (max-width:480px){
+    *{
+        padding: 0.1em;
+        margin: 0.1em;
+    }
+
+    body{
+        font-size: 1em;
+    }
+
+    #cabecera{
+        font-size: 1.4em;
+        width: 100%;
+        line-height: 12vw;
+        margin: 0;
+        text-align: center;
+    }
+
+    #menu{
+        line-height: 2em;
+        height: 2em;
+        text-align: left;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    
+    .opcion{
+        margin-right: 0.5em;
+    }
+
+    .img_sobremi{
+        width: 20%;
+        float: left;
+        margin-right: 0.5em;
+    }
+
+    #calendario{
+        width: 10%;
+    }
+
+    figure{
+        position: relative;
+    }
+
+    figcaption{
+        position: absolute;
+        top: 0.5em;
+        right: 20em;
+    }
+
+    .icono{
+        width: 10%;
+    }
+}
+
+/*Formato para <= 800px*/
+@media only screen and (min-width:481px) and (max-width:800px){
+    body{
+        font-size: 1em;
+    }
+
+    #cabecera{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    #menu{
+        height: 2em;
+        line-height: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .opcion{
+        margin-right: 1em;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    #sobre_mi{
+        float: left;
+        width: 49%;
+        margin-right: 0.5em;
+    }
+
+    .minion{
+        width: 50%;
+    }
+
+    #a_que_me_dedico{
+        float: left;
+        width: 49.9%;
+    }
+
+    #panel_central{
+        clear: both;
+    }
+
+    .img_sobremi{
+        width: 20%;
+        float: left;
+    }
+
+    #calendario{
+        width: 10%;
+    }
+
+    figure{
+        position: relative;
+    }
+
+    figcaption{
+        position: absolute;
+        top: 1.5em;
+        right: 36.5em;
+    }
+
+    .icono{
+        width: 8%;
+    }
+}
+
+/*Formato para > 800px*/
+@media only screen and (min-width:801px){
+    body{
+        width: 1024px;
+        margin: auto;
+    }
+
+    #cabecera{
+        height: 4em;
+        line-height: 4em;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+
+    #menu{
+        height: 2em;
+        line-height: 2em;
+        text-align: left;
+        margin-bottom: 2em;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .opcion{
+        margin-right: 1em;
+    }
+
+    .opcion:hover{
+        color: red;
+    }
+
+    #sobre_mi{
+        width: 20%;
+        float: left;
+        padding: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    .img_sobremi{
+        width: 50%;
+        float: left;
+    }
+
+    #a_que_me_dedico{
+        width: 20%;
+        float: left;
+        padding: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    #panel_central{
+        float: left;
+        width: 58%;
+        padding: 0.5em;
+    }
+
+    #calendario{
+        width: 10%;
+    }
+
+    figure{
+        position: relative;
+    }
+
+    figcaption{
+        position: absolute;
+        top: 1em;
+        right: 25em;
+    }
+
+    #pie{
+        clear: both;
+        vertical-align: middle;
+    }
+
+    hr{
+        clear: both;
+    }
+
+    .icono{
+        width: 5%;
+    }
+}
+
+/*Formato para impresora*/
+@media only print {
+    *{
+        background-color: white;
+    }
+    body{
+        font-size: 1em;
+    }
+
+    #cabecera{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    #menu{
+        height: 2em;
+        line-height: 2em;
+        margin-bottom: 0.5em;
+        display: none;
+    }
+
+    .opcion{
+        margin-right: 1em;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    #sobre_mi{
+        float: left;
+        width: 48%;
+        margin-right: 0.5em;
+    }
+
+    .minion{
+        width: 50%;
+    }
+
+    #a_que_me_dedico{
+        float: left;
+        width: 49.9%;
+    }
+
+    #panel_central{
+        clear: both;
+    }
+
+    .img_sobremi{
+        width: 20%;
+        float: left;
+    }
+
+    #calendario{
+        width: 10%;
+    }
+
+    figure{
+        position: relative;
+    }
+
+    figcaption{
+        position: absolute;
+        top: 1.5em;
+        right: 30em;
+    }
+
+    .icono{
+        width: 8%;
+    }
+
+    #pie{
+        display: none;
+    }
+
+    hr{
+        display: none;
+    }
+}

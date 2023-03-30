@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <title>Práctica RA2-3</title>
+            <link rel="stylesheet" href="./estilos/alberto134.css">
+        </head>
+        <body>
+            <h1>
+                Lenguaje de Marcas y SGI
+            </h1>
+            <h2>
+                Práctica RA2-3 - &copy; Alberto Sánchez Barona
+            </h2>
+            <h3>
+                Índice de contenido
+            </h3>
+            <hgroup>
+                <a id="inicio"></a>
+                &check;<a href="#datos">Datos y señales</a><br>
+                &check;<a href="#transmision">Transmisión de señales</a><br>
+                &check;<a href="#medio">Medio de transmisión</a><br>
+                &check;<a href="#capacidad">Capacidad de transmisión del medio</a>
+            </hgroup>
+            <hr>
+            <h3>
+                Bibliografía
+            </h3>
+            <hgroup>
+                &rightarrow;MUÑOZ, J.A., Planificación y Administración de redes – 2017. Disponible en <a href="https://planificacionadministracionredes.readthedocs.io/es/latest/index.html">https://planificacionadministracionredes.readthedocs.io/es/latest/index.html</a><br>
+                &rightarrow;SANDOVAL, J.A. ,Modulación.Disponible en <a href="https://www.slideshare.net/JosAntonioSandovalAc/fundamentos-de-telecomunicaciones-unidad-3-modulacion">https://www.slideshare.net/JosAntonioSandovalAc/fundamentos-de-telecomunicaciones-unidad-3-modulacion</a><br>
+                &rightarrow;WIKIPEDIA, Capa física de Ethernet. Disponible en <a href="https://es.wikipedia.org/wiki/Capa_f%C3%ADsica_de_Ethernet">https://es.wikipedia.org/wiki/Capa_f%C3%ADsica_de_Ethernet</a>
+            </hgroup>
+            <hr>
+            <a id="datos"></a>
+            <h3>
+                Datos y señales
+            </h3>
+            <p>
+                Una señal es toda variación o perturbación de un medio físico que puede ser detectada e interpretada. Uno de los aspectos fundamentales en la comunicación es transmitir información en forma de señales electromagnéticas o lumínicas a través de un medio de transmisión. Para ser transmitidos, los datos deben ser convertidos a estas señales. Al igual que la información que representan, las señales pueden ser:
+            </p>
+            <p><center><img src="./imagenes/ra2_3-1.png" alt="Señal analógica y digital"><figcaption>Señal analógica y digital</figcaption></center></p>
+            <p>
+                - Analógica .- Pueden tener un número infinito de valores dentro de un rango.
+            </p>
+            <p>
+                - Digital .- Solamente puede tener un número de valores definidos. Aunque cada valor puede ser cualquier número, a menudo es tan simple como cero y uno.
+            </p>
+            <p>
+                Tanto las señales analógicas como las digitales pueden ser de dos formas: periódicas y aperiódicas (no periódicas)
+            </p>
+            <p>
+                - Una señal es periódica si completa un patrón dentro de un marco de tiempo medible, denominado un periodo, y repite ese patrón en periodos idénticos subsecuentes. Cuando se completa un patrón completo, se dice que se ha completado un ciclo.
+            </p>
+            <p>
+                - Una señal aperiódica, o no periódica, cambia sin exhibir ningún patrón o ciclo que se repita en el tiempo.
+            </p>
+            <h4>
+                Señal analógica periódica
+            </h4>
+            <p>
+                La onda seno es la forma de una señal analógica periódica. Visualizada como una única curva oscilante, su cambio a lo largo de un ciclo es suave y consistente, un flujo continuo. La figura muestra una onda seno. Cada ciclo está formado por un único arco sobre el eje del tiempo seguido por un único arco por debajo de él.
+            </p>
+            <figure style="float: left;">
+                <img src="./imagenes/ra2_3-2.png" alt="Señal analógica periódica" style="float: left;">
+                <figcaption style="text-align: center;">Señal analógica periódica</figcaption>
+            </figure>
+            <p>
+                Los parámetros que caracterizan una onda seno son:<br>
+                • La amplitud A de una señal es el valor absoluto de su intensidad más alta, proporcional a la energía que transporta. En las señales eléctricas, la amplitud pico se mide normalmente en voltios.<br>
+                • El periodo T se refiere a la cantidad de tiempo, en segundos, que necesita una señal para completar un ciclo.<br>
+                • La frecuencia f indica el número de ciclos por segundo.<br>
+                • La longitud de onda es la distancia que una señal puede viajar en un periodo. Se puede calcular si se conoce la velocidad de propagación y el periodo de la señal.<br>
+                • La fase es la posición de la onda relativa al instante de tiempo 0.
+            </p>
+            <p>
+                El periodo y la frecuencia son la misma característica definida de dos formas distintas. El periodo es el inverso de la frecuencia y la frecuencia es la inversa del periodo. El periodo se expresa en segundos, mientras que la frecuencia se expresa en Herzios (Hz), que son número de ciclos o periodos por segundo.
+            </p>
+            <h4>
+                Señal digital
+            </h4>
+            <figure style="float: right;">
+                <img src="./imagenes/ra2_3-3.png" alt="Señal digital">
+                <figcaption style="text-align: center;">Señal digital</figcaption>
+            </figure>
+            <p>
+                
+                En las comunicaciones los datos también pueden representarse mediante una señal digital. Por ejemplo, un 1 se puede codificar como un voltaje positivo y un 0 como un voltaje cero.
+                La señal digital se caracteriza por:<br>
+                • Tasa de bits.- La mayoría de las señales digitals no se repiten cíclicamente, son aperiódicas. Por tanto, la periocidad y la frecuencia no se emplean. Se usa otro término para describir una señal digital: tasa de bits que es el número de bits enviados en un segundo. Habitualmente se expresa en bits por segundo (bps).<br>
+                • Intervalo de bit.- Ya hemos tratado el concepto de longitud de onda para una señal analógica: la distancia que un ciclo ocupa en el medio de transmisión. Se puede definir algo similar para una señal digital: el intervalo de bit. El intervalo de bit es la distancia que ocupa un bit en el medio de transmisión. Intervalo de bit = velocidad de propagación x duración del bit<br>
+            </p>
+            <img src="./imagenes/arriba.png"><a href="#inicio">Volver arriba</a>
+            <a id="transmision"></a>
+            <h3>
+                Transmisión de señales
+            </h3>
+            <p>
+                Ya sabemos que un ordenador maneja datos digitales (binarios). Estos datos hay que transmitirlos a otro ordenador. Por tanto los 0s y 1s tienen que convertirse para que se puedan enviar desde el emisor al receptor y este último los pueda interpretar correctamente. La cuestión fundamental es ¿cómo se puede enviar un dato digital? Para distancias cortas (algunos metros) y con medios de transmisión de gran capacidad se emplea transmisión de señales digitales. Por otro lado, si las distancias a transmitir son muy largas o el medio de transmisión no tiene mucha calidad se emplea transmisión de señales analógicas. Por tanto, se pueden transmitir datos digitales empleando dos técnicas que veremos a continuación:
+            </p>
+            <h4>
+                Transmisión banda base
+            </h4>
+            <p>
+                En la transmisión en banda base los datos digitales se convierten en señales digitales para su envío por el medio de transmisión mediante la codificación de línea que convierte una secuencia de bits a una señal digital. En el emisor, los datos digitales se codifican en una señal digital; en el receptor, los datos digitales se vuelven a crear mediante la decodificación de la señal digital. Entre el emisor y el receptor solamente se establece una sola comunicación.
+            </p>
+            <center><img src="./imagenes/ra2_3-4.png" alt="Transmisión banda base"><figcaption>Transmisión banda base</figcaption><br></center>
+            <left><img src="./imagenes/arriba.png"><a href="#inicio">Volver arriba</a></left>
+            <a id="medio"></a>
+            <h3>
+                Medios de transmisión
+            </h3>
+            <p>
+                La transmisión de datos es el intercambio de datos entre dos dispositivos, el emisor y el receptor, a través de un medio de transmisión, como un cable. Los medios de transmisión son las vías por las cuales los dispositivos intercambian los datos. Dependiendo de la forma de conducir la señal a través del medio o soporte físico, se pueden clasificar en dos grandes grupos:<br>
+                • Medios de transmisión guiados o cableados.- Los datos se transmiten a través de cables, como por ejemplo los cables de par trenzado y fibra óptica.<br>
+                • Medios de transmisión no guiados o inalámbricos.- Se utiliza el aire como medio de transmisión, a través de radiofrecuencias, microondas y luz.
+            </p>
+            <h4>
+                Par trenzado
+            </h4>
+            <p>
+                El cable de par trenzado consiste en un conjunto de pares de hilos de cobre, en el que los conductores de cada par están cruzados entre sí, con el objetivo de reducir el ruido de diafonía. A mayor UTP Coaxial número de cruces por unidad de longitud, mejor comportamiento ante el problema de diafonía.
+                <figure style="float: right;">
+                    <right><img src="./imagenes/ra2_3-5.png" alt="UTP">
+                        <figcaption style="text-align: center;">UTP</figcaption></right>
+                </figure>
+            </p>
+            <p>
+                Existen tres tipos básicos de pares trenzados:<br>
+                • No apantallado, sin blindar o sin blindaje: Unshielded Twisted Pair (UTP), es un tipo de cable de pares trenzados sin recubrimiento metálico externo, de modo que es sensible a las interferencias. Es un cable económico, flexible y sencillo de instalar. Es el cable más habitual en la instalación de redes locales.<br>
+                • Apantallado, blindado o con blindaje: Shielded Twisted Pair (STP).- Este cable es semejante al UTP, pero se le añade un recubrimiento metálico independiente a cada par pares para evitar las interferencias externas que debe ser conectado a la tierra de la instalación. Además tiene una lámina externa de aluminio o de cobre trenzado alrededor del conjunto de pares. Por tanto, es un cable más protegido, pero menos flexible que el UTP. El sistema de trenzado es idéntico al del cable UTP.<br>
+                • Apantallado con pantalla global: Foiled Twisted Pair (FTP).- En este tipo de cable como en el UTP, sus pares no están apantallados, pero sí dispone de una pantalla global para mejorar su nivel de protección ante interferencias externas, aunque disponen de trenzados menos estrictos y con pasos de trenza menores que los anteriores.
+            </p>
+            <h4>
+                Coaxial
+            </h4>
+            <p>
+                <figure style="float: left;">
+                    <img src="./imagenes/ra2_3-6.png" alt="Coaxial">
+                    <figcaption style="text-align: center;">Coaxial</figcaption>
+                </figure>
+                Este cable tiene mejor blindaje, mayores velocidades de transmisión y distancias más largas que el cable de par trenzado. El cable coaxial no es habitualmente afectado por interferencias externas, y es capaz de lograr altas velocidades de transmisión de datos en largas distancias. Por esa razón, se utiliza en redes de comunicación de banda ancha (televisión por cable) y cables de banda base (Ethernet).
+            </p>
+            <p>
+                Su estructura es la de un cable formado por un conductor central sólido o compuesto por múltiples fibras al que rodea un aislante dieléctrico de mayor diámetro. Una malla exterior aísla de interferencias al conductor central. Por último, utiliza un material aislante para recubrir y proteger todo el conjunto.
+            </p>
+            <img src="./imagenes/arriba.png"><a href="#inicio">Volver arriba</a>
+            <a id="capacidad"></a>
+            <h3>
+                Capacidad del medio de transmisión
+            </h3>
+            <p>
+                En cualquier sistema de comunicaciones se debe aceptar que la señal que se recibe diferirá de la señal transmitida debido a varias adversidades y dificultades sufridas en la transmisión. En las señales analógicas, estas dificultades pueden degradar la calidad de la señal. En las señales digitales, se generarán bits erróneos: un 1 binario se transformará en un 0 y viceversa.
+            </p>
+            <h4>
+                Atenuación
+            </h4>
+            <p>
+                <figure style="float: right;">
+                    <img src="./imagenes/ra2_3-7.png" alt="Atenuación">
+                    <figcaption style="text-align: center;">Atenuación</figcaption>
+                </figure>
+                En cualquier medio de transmisión la energía de la señal decae con la distancia. En medios guiados, esta reducción de la energía es por lo general exponencial y, por tanto, se expresa generalmente como un número constante en decibelios por unidad de longitud. En medios no guiados, la atenuación es una función más compleja de la distancia y es dependiente, a su vez, de las condiciones atmosféricas.
+            </p>
+            <p>
+                Cuando se transmite una señal por un cable coaxial o de pares trenzados la señal recibida debe tener suficiente energía para que la circuitería electrónica en el receptor pueda detectar la señal adecuadamente. En un enlace punto a punto, la energía de la señal en el transmisor debe ser lo suficientemente elevada como para que se reciba con inteligibilidad, pero no tan elevada que sature la circuitería del transmisor o del receptor, lo que generaría una señal distorsionada.
+            </p>
+            <h4>
+                Distorsión de retardo
+            </h4>
+            <p>
+                Distorsión de retardo La distorsión de retardo es un fenómeno debido a que la velocidad de propagación de una señal a través de un medio guiado varía con la frecuencia. Para una señal limitada en banda, la velocidad tiende a ser mayor cerca de la frecuencia central y disminuye al acercarse a los extremos de la banda. Por tanto, las distintas componentes en frecuencia de la señal llegarán al receptor en instantes diferentes de tiempo, dando lugar a desplazamientos de fase entre las diferentes frecuencias.<br>
+                <center><img src="./imagenes/ra2_3-8.png" alt="Distorsión de retardo"><figcaption>Distorsión de retardo</figcaption></center>
+            </p>
+            <h4>
+                Ruido
+            </h4>
+            <p>
+                Para cualquier dato transmitido, la señal recibida consistirá en la señal transmitida modificada por las distorsiones introducidas en la transmisión, además de señales no deseadas que se insertarán en algún punto entre el emisor y el receptor. A estas últimas señales no deseadas se les denomina ruido. El ruido es el factor de mayor importancia de entre los que limitan las prestaciones de un sistema de comunicación. Existen diferentes tipos de ruido que vamos a ver a continuación.
+            </p>
+            <p>
+                e dice que entre dos circuitos existe diafonía o crosstalk (XT), cuando parte de las señales presentes en uno de ellos, considerado perturbador, aparece en el otro, considerado perturbado. La diafonía, en el caso de cables de pares trenzados se presenta generalmente debido a acoplamientos magnéticos entre los elementos que componen los circuitos perturbador y perturbado.
+            </p>
+            <p>
+                Cuando en un par se transmite una señal eléctrica se genera energía electromagnética que se irradia en forma de señal de radio en el otro par circundante. Los hilos de este actúan como una antena que reciben la energía transmitida lo que interfiere en la señal transmitida en esos hilos.
+            </p>
+            <p>
+                <figure style="float: left;">
+                    <img src="./imagenes/ra2_3-9.png" alt="Diafonía">
+                    <figcaption style="text-align: center;">Diafonía</figcaption>
+                </figure>
+                Los ruidos antes descritos son de magnitud constante y razonablemente predecibles. Así pues, es posible idear un sistema de transmisión que les haga frente. Por el contrario, el ruido impulsivo es no continuo y está constituido por pulsos o picos irregulares de corta duración y de amplitud relativamente grande. Se generan por una gran diversidad de causas, por ejemplo, por perturbaciones electromagnéticas exteriores producidas por tormentas atmosféricas, conmutaciones en dispositivos electromecánicos o eléctricos, líneas de energía eléctrica; o por fallos y defectos en los sistemas de comunicación.<br>
+                <img src="./imagenes/arriba.png"><a href="#inicio">Volver arriba</a>
+            </p>
+        </body>
+    </html>

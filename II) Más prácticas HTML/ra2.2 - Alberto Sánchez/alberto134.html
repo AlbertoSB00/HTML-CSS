@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="utf-8">
+            <title>Elementos textuales</title>
+            <link rel="stylesheet" href="estilos/alberto134.css">
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+            </style>
+        </head>
+        <body>
+            <hgroup>
+                <p>
+                    <h1>Lenguaje de Marcas y SGI</h1>
+                </p>
+                <p>
+                    <h2>Práctica RA2-2 - &copy;Alberto Sánchez Barona</h2>
+                </p>
+            </hgroup>
+            <hr>
+            <p>
+                <cite>«Los ordenadores están para resolver problemas que antes no existían»</cite> - Bill Gates
+            </p>
+            <hr>
+            <p>
+                <h3>Introducción a los documentos web</h3>
+            </p>
+            <p>
+                Los lenguajes de marcado para crear documentos web permiten aglutinar textos, sonidos e imágenes y
+                combinarlos a nuestro gusto. Además, y es aquí donde reside su mayor ventaja, la estructura de los documentos es hipertexto lo que nos permite la introducción de referencias a otros documentos web por medio de los enlaces hipertexto.
+            </p>
+            <p>
+                El lenguaje de marcado para la web fue HTML, el cual se creó en un principio con objetivos divulgativos. No se pensó que la web llegara a ser un área de ocio con carácter multimedia, de modo que, el HTML se creó sin dar respuesta a todos los posibles usos que se le iba a dar y a todos los colectivos de personas que lo utilizarían en un futuro. Sin embargo, pese a esta deficiente planificación, si que se han ido incorporando modificaciones con el tiempo, a través de diferentes versiones normalizados.
+            </p>
+            <hr>
+            <p>
+                <h3>HTML</h3>
+            </p>
+            <p>
+                Desde la publicación de <abbr title="Hyper Text Markup Language">HTML</abbr> 4.01, la actividad de estandarización de HTML se detuvo y el W3C se centró en el desarrollo del estándar XHTML. Por este motivo, en el año 2004, las empresas Apple, Mozilla y Opera mostraron su preocupación por la falta de interés del W3C en HTML y decidieron organizarse en una nueva asociación llamada <abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr>.
+            </p>
+            <p>
+                HTML5 introduce además nuevas APIs o <font color="darkred">"Application Programming Interface"</font> y se puede definir como un conjunto de subrutinas, especificaciones y métodos que ofrece cierta biblioteca para ser utilizado por otro programa. Las APIs permiten hacer uso de funciones o infraestructura ya existente en otro programa, ahorrando tiempo y recursos al evitar programar todo desde el inicio.
+            </p>
+            <hr>
+            <p>
+                <h3>XHTML</h3>
+            </p>
+            <p>
+                De forma paralela a su actividad con HTML, W3C ha continuado con la estandarización de XHTML, una versión avanzada de HTML y basada en XML. La primera versión de XHTML se denomina XHTML 1.0 y se publicó el 26 de Enero de 2000 (y posteriormente se revisó el 1 de Agosto de 2002).
+            </p>
+            <p>
+                XHTML 1.0 es una adaptación de HTML 4.01 al lenguaje XML, por lo que <b>mantiene casi todas sus etiquetas y características</b>, pero añade algunas restricciones y elementos propios de XML. La versión XHTML 1.1 ya ha sido publicada en forma de borrador y pretende modularizar XHTML. También ha sido publicado el borrador de XHTML 2.0, que iba a suponer un cambio muy importante respecto de las anteriores versiones de XHTML. Sin embargo, <u>mantiene casi todas sus etiquetas y características</u> ya que se abandonó el proyecto en favor de HTML5.
+            </p>
+            <p>
+                <h3>Diferencias entre HTML5 y XHTML</h3>
+            </p>
+            <p>
+                En el momento de escribir este documento, podemos decir que XHTML es un proyecto abandonado por el W3C. Solamente publicó las versiones 1.0 y 1.1 para centrarse en el desarrollo de HTML5. Es recomendable para los desarrolladores web emplear este último cuyo último borrador (versión 5.2) se publico en diciembre del 2017. Las principales diferencias de XHTML y HTML son las siguientes:
+            </p>
+            <p>
+                ✓ HTML deriva de SGML y XHTML deriva de XML.
+                ✓ HTML es menos estricto, si hay un error de sintaxis el navegador todavía puede mostrar la página web, mientras que en XHTML hay que seguir estrictamente las reglas de sintaxis para que el navegador la muestre.
+                ✓ HTML está diseñado básicamente para desplegar datos y está centrado en la presentación de esos datos mientras que XHTML está básicamente enfocado a la distribución de datos.
+            </p>
+            <p>
+                Respecto a la sintaxis del lenguaje empleado en un documento web, cuando un documento se transmite con un tipo mime XML <mark>(application/xhtml+xml)</mark> es tratado como un documento XML por los navegadores para ser traducido por el procesador XML. Por tanto el más pequeño error de sintaxis podría provocar que el documento no se visualizara correctamente. Sin embargo, si se transmite con tipo mime HTML <mark>(text/html)</mark> entonces pequeños errores de sintaxis pueden pasar por alto y el navegador mostrar el documento correctamente.
+            </p>
+            <p>
+                <h3>CSS</h3>
+            </p>
+            <p>
+                CSS es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.2 Es muy usado para establecer el diseño visual de los documentos web, e interfaces de usuario escritas en HTML o XHTML; el lenguaje puede ser aplicado a cualquier documento XML, incluyendo XHTML, SVG, XUL, RSS, etcétera. Te puede ayudar a crear tu propio sitio web. Junto con HTML y JavaScript, CSS es una tecnología usada por muchos sitios web para crear páginas visualmente atractivas, interfaces de usuario para aplicaciones web y GUIs para muchas aplicaciones móviles (como Firefox OS).3
+            </p>
+            <p>
+                Una hoja de estilo se compone de una o varias reglas de estilo, que son las declaraciones de los formatos que adoptará el elemento para el cual va destinada. Las reglas de estilo tienen dos componentes: el selector, que seleccionará los elementos sobre los que actuará la regla, y la declaración, que establece las propiedades y valores a aplicar sobre los elementos seleccionados. Así, una regla de estilo adopta la siguiente sintaxis
+            </p>
+            <p>
+                <pre>selector { propiedadl: valor1; }</pre>
+            </p>
+            <p>
+                En el caso de declararse más de una propiedad/valor, éstas deben estar separadas por punto y coma, como por ejemplo:
+            </p>
+            <p>
+                <pre>
+                    selector {
+                    propiedad1: valor1;
+                    propiedad2: valor2;
+                    ...
+                    }
+                </pre>
+            </p>
+            <p>
+                <h3>Formulación molecular</h3>
+            </p>
+            <p>
+                La fórmula molecular expresa el número real de átomos que forman una molécula a diferencia de la fórmula química que es la representación convencional de los elementos que forman una molécula o compuesto químico. Una fórmula molecular se compone de símbolos y subíndices numéricos; los símbolos corresponden a los elementos que forman el compuesto químico representado y los subíndices son la cantidad de átomos presentes de cada elemento en el compuesto. Así, por ejemplo, una molécula de ácido sulfúrico, descrita por la fórmula molecular H2SO4 posee dos átomos de hidrógeno, un átomo de azufre y cuatro átomos de oxígeno. A continuación presentamos las fórmulas químicas de los ácidos:
+            </p>
+            <p>
+                ácido clorhídrico → HCl<br>
+                ácido fosfórico → H<sub>3</sub>PO<sub>4</sub><br>
+                ácido sulfuroso → H<sub>2</sub>SO<sub>3</sub><br>
+                ácido sulfúrico → H<sub>2</sub>SO<sub>4</sub>
+            </p>
+        </body>
+    </html>

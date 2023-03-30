@@ -1,0 +1,32 @@
+body{
+    background-image: url("../imagenes/textura-del-papiro.jpg");
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    text-decoration-color: black; 
+}
+
+h1, h2{
+    font-family: 'Chilanka';
+    text-align: center;
+}
+
+h3{
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: underline;
+    color: darkslategray;
+}
+
+p{
+    text-align: justify;
+    color: darkblue;
+}
+
+pre{
+    font-family: monospace;
+    color: darkblue;
+    background-color: violet;
+}
+
+abbr{
+    background-color: aqua;
+}
